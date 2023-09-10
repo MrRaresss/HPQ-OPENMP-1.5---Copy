@@ -31270,8 +31270,7 @@ redist::check_p_account(playerid) {
 	}
 	else if PlayerInfo[playerid][pHelper] *then {
 		Iter_Add(Staff<HELPER>, playerid);
-		format(gString, 128, "HelloBot: Helper %s has just logged in.", GetName(playerid));
-		SendAdminMessage(COLOR_LOGS, gString, 1);
+		SendAdminMessage(COLOR_LOGS, "HelloBot: Helper %s has just logged in.", 1, GetName(playerid));
 		Iter_Add(Staff<ADMIN>, playerid);
 	}
 	if PlayerInfo[playerid][pVip] == 3 *then Iter_Add(PlayerVips<LEGEND>, playerid);
